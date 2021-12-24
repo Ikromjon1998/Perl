@@ -4,40 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Table</title>
+    <title>My First Form</title>
 </head>
 <body>
-    <h2>HTML Table</h2>
-    <table style="border:1px solid blue;  border-collapse: collapse; border-spacing:15px">
-        <caption>Asian Customers</caption>
-        <tr>
-            <th style="border:1px solid red;" colspan="2">Customer and Contact</th>
-            <!--<th style="border:1px solid red">Contact</th>-->
-            <th style="border:1px solid red">Country</th>
-        </tr>
-        <tr>
-            <td style="border:1px solid red">Raj Melhotra</td>
-            <td style="border:1px solid red">raj.melhotra@smail.in</td>
-            <td style="border:1px solid red">India</td>
-        </tr>
-    </table>
-    <br/>
-    <table style="border:1px solid blue;  border-collapse: separate; border-spacing:15px">
-        <tr>
-            <th style="border:1px solid red; padding:20px">Customer</th>
-            <th style="border:1px solid red; padding:20px">Contact</th>
-            <th style="border:1px solid red; padding:20px">Country</th>
-        </tr>
-        <tr>
-            <td style="border:1px solid red">Alabana Inane</td>
-            <td style="border:1px solid red">alabana.inane@mail.in</td>
-            <td style="border:1px solid red" rowspan="2">France</td>
-        </tr>
-        <tr>
-            <td style="border:1px solid red">Alabana Inane</td>
-            <td style="border:1px solid red">alabana.inane@mail.in</td>
-            <!--<td style="border:1px solid red">France</td>-->
-        </tr><caption> European Customers</caption>
-    </table>
+    <h2>HTML Form</h2>
+    <form action="handeleSubmit()">
+        Your name:<br>
+            <input type="text" name="firstname" value="" placeholder="First name?"> <br>
+            <input type="radio" name="gender" value="male" checked> Male <br>
+            <input type="radio" name="gender" value="female"> Feamle <br>
+        Have you been to Asia or Europe? <br>
+        <input type="checkbox" name="travel_asia" value="Asia"> Yes, I have been to Asia <br>
+        <input type="checkbox" name="travel_europe" value="Europe"> Yes, I have been to Europe <br>
+        Your favourite color:
+        <input type="color" name="fav_color"> <br> <br>
+        Your birthday:
+        <input type="date" name="bday"> <br>
+        Range of the children's age(if any):
+        <input type="range" name="points" min="0" max="10"> <br> <br>
+        Telephone:
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br> <br>
+        Select a week for appointment:
+        <input type="week" name="year_week" > <br>
+        Select a time for appointment:
+        <input type="time" name="usr_time" id=""> <br>
+        Add your website: 
+        <input type="url" name="homepage"><br>
+        <input type="button" value="Click me!" onclick="alert('I am a regular alert')">
+        <input type="submit">
+        <input type="reset">
+    </form>
 </body>
 </html>
