@@ -8,25 +8,36 @@
 </head>
 <body>
     <h2>HTML Table</h2>
-    <table>
+    <table style="border:1px solid blue;  border-collapse: collapse; border-spacing:15px">
+        <caption>Asian Customers</caption>
         <tr>
-            <th>Customer</th>
-            <th>Contact</th>
-            <th>Country</th>
-            <th>Feedback</th>
+            <th style="border:1px solid red;" colspan="2">Customer and Contact</th>
+            <!--<th style="border:1px solid red">Contact</th>-->
+            <th style="border:1px solid red">Country</th>
         </tr>
         <tr>
-            <td>Alabane Inane</td>
-            <td>alabane.inane@mail.in</td>
-            <td>France</td>
-            <td>Good</td>
+            <td style="border:1px solid red">Raj Melhotra</td>
+            <td style="border:1px solid red">raj.melhotra@smail.in</td>
+            <td style="border:1px solid red">India</td>
+        </tr>
+    </table>
+    <br/>
+    <table style="border:1px solid blue;  border-collapse: separate; border-spacing:15px">
+        <tr>
+            <th style="border:1px solid red; padding:20px">Customer</th>
+            <th style="border:1px solid red; padding:20px">Contact</th>
+            <th style="border:1px solid red; padding:20px">Country</th>
         </tr>
         <tr>
-            <td>Raj Melhotra</td>
-            <td>raj.melhotra@smail.in</td>
-            <td>India</td>
-            <td>Good</td>
+            <td style="border:1px solid red">Alabana Inane</td>
+            <td style="border:1px solid red">alabana.inane@mail.in</td>
+            <td style="border:1px solid red" rowspan="2">France</td>
         </tr>
+        <tr>
+            <td style="border:1px solid red">Alabana Inane</td>
+            <td style="border:1px solid red">alabana.inane@mail.in</td>
+            <!--<td style="border:1px solid red">France</td>-->
+        </tr><caption> European Customers</caption>
     </table>
 </body>
 </html>
