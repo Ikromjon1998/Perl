@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uHost</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="name"></div>
+    <div id="details"></div>
+    <button onclick="myJSFunctionIn()">Inline</button>
+    <button onclick="myJSFunction()">External File JS</button>
+    <script>
+        function myJSFunctionIn() {
+         document.getElementById("name").innerHTML = "This JavaScript is within the same file within script tags ";
+        }
+    </script>
+    <script src="myJS.js"></script>
+</body>
+</html>
