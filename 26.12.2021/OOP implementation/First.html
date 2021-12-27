@@ -5,36 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
     <h2>User Details</h2>
 
     <p id="name"></p>
     <p id="userid"></p>
+    <p id="roleId"></p>
 
 
     <script>
-    class User {
-        constructor( firstName, lastName, userName) {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.userName = userName;
-        }
+    // class User {
+    //     static userCount = 0;
 
-        getUserName() {
-            return this.firstName + " " + this.lastName;
-        }
+    //     constructor(firstName, lastName, userId = "alotil") {
+    //         this.firstName = firstName;
+    //         this.lastName = lastName;
+    //         this.userId = userId;
 
-        changeName(newFirstName, newLastName) {
-            this.firstName = newFirstName;
-            this.lastName = newLastName;
-        }
-    }
+    //         User.userCount++;
+    //         console.log('User Count = ' + User.userCount);
+    //     }
 
-    appUser = new User("Alo", "Usmon", "Faruh");
+    //     getUserName() {
+    //         return this.firstName + " " + this.lastName;
+    //     }
+    //     getUserId(){
+    //         return this.userId;
+    //     }
 
-    document.getElementById("name").innerHTML = appUser.getUserName();
-    document.getElementById("userid").innerHTML = appUser.userName;
+    //     changeName(newFirstName, newLastName) {
+    //         this.firstName = newFirstName;
+    //         this.lastName = newLastName;
+    //     }
+
+    //     static create(firstName, lastName, userId) {
+    //         return new User(firstName, lastName, userId);
+    //     }
+    // }
+    // anotherUser = User.create("Ravshan", "Umidov", "ravum");
+    // console.log( anotherUser.getUserName());
+    // console.log(anotherUser.getUserId());
+    // // document.getElementById("userId").innerHTML = anotherUser.getUserId();
+
+    // appUser = User.create("Alohon", "Tilahujaev");
+    // console.log( appUser.getUserName());
+    // console.log(appUser.getUserId());
+    // document.getElementById("name").innerHTML = appUser.getUserName();
+    
+    // // document.getElementById("userId").innerHTML = anotherUser.getUserId;
+
     </script>
+    <script src="OOP5_inheritance.js"></script>
 </body>
 </html>
